@@ -7,7 +7,7 @@ import alex.klimchuk.javacore.consoleshop.service.CategoryService;
 import java.util.List;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class CategoryServiceImpl implements CategoryService {
 

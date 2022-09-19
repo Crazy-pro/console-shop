@@ -5,7 +5,7 @@ import alex.klimchuk.javacore.consoleshop.model.Product;
 import java.time.Duration;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class Order {
 

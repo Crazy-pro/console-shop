@@ -11,7 +11,7 @@ import alex.klimchuk.javacore.consoleshop.order.*;
 import java.util.Scanner;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class OrdersMenuDisplayHelperImpl implements OrdersMenuDisplayHelper {
 

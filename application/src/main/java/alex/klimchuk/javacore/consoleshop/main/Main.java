@@ -42,7 +42,7 @@ import java.net.Socket;
 import java.util.*;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class Main {
 

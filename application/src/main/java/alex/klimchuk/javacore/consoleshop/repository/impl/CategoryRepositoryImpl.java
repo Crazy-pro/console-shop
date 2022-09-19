@@ -15,7 +15,7 @@ import java.sql.*;
 import static java.sql.Statement.RETURN_GENERATED_KEYS;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class CategoryRepositoryImpl extends Repository<Category> implements CategoryRepository {
 

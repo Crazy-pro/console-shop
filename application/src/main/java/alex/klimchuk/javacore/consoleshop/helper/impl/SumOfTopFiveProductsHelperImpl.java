@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.util.Comparator;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class SumOfTopFiveProductsHelperImpl implements SumOfTopFiveProductsHelper {
 

@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.Map;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class ProductComparator implements Comparator<Product> {
 

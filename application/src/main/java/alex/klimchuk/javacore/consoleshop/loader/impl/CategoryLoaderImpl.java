@@ -14,7 +14,7 @@ import java.io.File;
 import java.net.URL;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class CategoryLoaderImpl implements CategoryLoader {
 

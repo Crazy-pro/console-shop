@@ -9,7 +9,7 @@ import java.io.ObjectInputStream;
 import java.io.IOException;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class ServerServiceImpl implements ServerService {
 

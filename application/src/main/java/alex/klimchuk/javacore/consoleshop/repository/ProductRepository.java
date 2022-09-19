@@ -3,7 +3,7 @@ package alex.klimchuk.javacore.consoleshop.repository;
 import alex.klimchuk.javacore.consoleshop.model.Product;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public interface ProductRepository {
 

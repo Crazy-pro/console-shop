@@ -1,7 +1,7 @@
 package alex.klimchuk.javacore.consoleshop.settings;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public final class DataBaseConnectionSettings {
 

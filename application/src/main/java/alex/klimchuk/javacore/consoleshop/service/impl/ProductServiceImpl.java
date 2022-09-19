@@ -5,7 +5,7 @@ import alex.klimchuk.javacore.consoleshop.repository.ProductRepository;
 import alex.klimchuk.javacore.consoleshop.service.ProductService;
 
 /**
- * Copyright Alex Klimchuk (c) 2019.
+ * Copyright Alex Klimchuk (c) 31.10.2019.
  */
 public class ProductServiceImpl implements ProductService {
 
