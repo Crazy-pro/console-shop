@@ -1,6 +1,6 @@
 ### Practical task: 
 Multi-module console application with client-server architecture written on Java 
-for learing all features of Java 8-9 versions
+for learning all features of Java 8-9 versions
   
   
   
