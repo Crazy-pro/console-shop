@@ -1,6 +1,6 @@
-### Practical task: 
-Multi-module console application with client-server architecture written on Java 
-for learning all features of Java 8-9 versions
+### Console Shop: 
+Multi-module console application with client-server architecture written in Java
+to learn all the features of Java versions 8-9.
   
   
   
