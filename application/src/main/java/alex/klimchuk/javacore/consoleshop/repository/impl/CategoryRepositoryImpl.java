@@ -35,8 +35,12 @@ public class CategoryRepositoryImpl extends Repository<Category> implements Cate
     public List<Category> findAll() {
         List<Category> categories = new ArrayList<>();
         doInNewTransaction(connection -> {
-            try (PreparedStatement getCategoriesStatement = connection.prepareStatement(SELECT_CATEGORIES_SQL);
-                 PreparedStatement getProductsStatement = connection.prepareStatement(SELECT_PRODUCTS_SQL);
+            try (PreparedStatement getCategoriesStatement = connection.prepareStatement(SELECT_CATEGORIES_SQL,
+                    ResultSet.TYPE_SCROLL_SENSITIVE,
+                    ResultSet.CONCUR_UPDATABLE);
+                 PreparedStatement getProductsStatement = connection.prepareStatement(SELECT_PRODUCTS_SQL,
+                         ResultSet.TYPE_SCROLL_SENSITIVE,
+                         ResultSet.CONCUR_UPDATABLE);
                  ResultSet categoriesResultSet = getCategoriesStatement.executeQuery();
                  ResultSet productsResultSet = getProductsStatement.executeQuery()) {
                 while (categoriesResultSet.next()) {

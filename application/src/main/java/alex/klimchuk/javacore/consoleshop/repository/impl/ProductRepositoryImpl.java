@@ -19,7 +19,11 @@ public class ProductRepositoryImpl extends Repository<Product> implements Produc
     @Override
     public void save(Product product) {
         doInNewTransaction(connection -> {
-            try (PreparedStatement preparedStatement = connection.prepareStatement(INSERT_PRODUCT_SQL, RETURN_GENERATED_KEYS)) {
+            try (PreparedStatement preparedStatement = connection.prepareStatement(
+                    INSERT_PRODUCT_SQL,
+                    RETURN_GENERATED_KEYS,
+                    ResultSet.TYPE_SCROLL_SENSITIVE,
+                    ResultSet.CONCUR_UPDATABLE)) {
                 preparedStatement.setString(1, product.getName());
                 preparedStatement.setString(2, product.getDescription());
                 preparedStatement.setBigDecimal(3, product.getPrice());
