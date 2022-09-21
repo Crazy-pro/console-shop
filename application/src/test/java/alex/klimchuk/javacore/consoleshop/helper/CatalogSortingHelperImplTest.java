@@ -4,7 +4,6 @@ import alex.klimchuk.javacore.consoleshop.model.Catalog;
 import alex.klimchuk.javacore.consoleshop.model.Product;
 import alex.klimchuk.javacore.consoleshop.helper.impl.CatalogSortingHelperImpl;
 import alex.klimchuk.javacore.consoleshop.parser.Order;
-import alex.klimchuk.javacore.consoleshop.model.*;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.runner.RunWith;
 import org.junit.Assert;
@@ -17,7 +16,7 @@ import java.util.*;
 import static alex.klimchuk.javacore.consoleshop.helper.CatalogInitializingHelper.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestCatalogSortingHelperImpl {
+public class CatalogSortingHelperImplTest {
 
     private final CatalogSortingHelper CATALOG_SORTING_HELPER = new CatalogSortingHelperImpl();
     private Catalog catalog;
@@ -44,7 +43,7 @@ public class TestCatalogSortingHelperImpl {
         sortedLaptops.add(new Product("Laptop", "Huawei MateBook X Pro", new BigDecimal("800.00"), "China"));
         sortedLaptops.add(new Product("Laptop", "Lenovo Legion Y530-15ICH", new BigDecimal("950.00"), "China"));
         sortedLaptops.add(new Product("Laptop", "Dell G3 700", new BigDecimal("1100.00"), "USA"));
-        sortedLaptops.add(new Product("Laptop", "Asus Zenbook", new BigDecimal("1100.00"), "China"));
+        sortedLaptops.add(new Product("Laptop", "Asus ZenBook", new BigDecimal("1100.00"), "China"));
         sortedLaptops.add(new Product("Laptop", "Asus ROG", new BigDecimal("1300.00"), "China"));
         sortedLaptops.add(new Product("Laptop", "Asus ROG", new BigDecimal("1400.00"), "China"));
         sortedLaptops.add(new Product("Laptop", "Apple MacBook Air 13", new BigDecimal("2500.00"), "USA"));

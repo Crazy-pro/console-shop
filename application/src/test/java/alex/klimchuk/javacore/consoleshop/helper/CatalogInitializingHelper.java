@@ -3,7 +3,6 @@ package alex.klimchuk.javacore.consoleshop.helper;
 import alex.klimchuk.javacore.consoleshop.model.Catalog;
 import alex.klimchuk.javacore.consoleshop.model.Category;
 import alex.klimchuk.javacore.consoleshop.model.Product;
-import alex.klimchuk.javacore.consoleshop.model.*;
 
 import java.math.BigDecimal;
 
@@ -30,7 +29,7 @@ public class CatalogInitializingHelper {
         laptop.getProducts().add(new Product("Laptop", "Asus ROG", new BigDecimal("1400.00"), "China", 1L));
         laptop.getProducts().add(new Product("Laptop", "Asus ROG", new BigDecimal("1300.00"), "China", 1L));
         laptop.getProducts().add(new Product("Laptop", "Dell G3 700", new BigDecimal("1100.00"), "USA", 1L));
-        laptop.getProducts().add(new Product("Laptop", "Asus Zenbook", new BigDecimal("1100.00"), "China", 1L));
+        laptop.getProducts().add(new Product("Laptop", "Asus ZenBook", new BigDecimal("1100.00"), "China", 1L));
         laptop.getProducts().add(new Product("Laptop", "Huawei MateBook X Pro", new BigDecimal("800.00"), "China", 1L));
         tablet.getProducts().add(new Product("Tablet", "Samsung", new BigDecimal("900.00"), "South Korea", 2L));
         tablet.getProducts().add(new Product("Tablet", "Xiaomi", new BigDecimal("700.00"), "China", 2L));

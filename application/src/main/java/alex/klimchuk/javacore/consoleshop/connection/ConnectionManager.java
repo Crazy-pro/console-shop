@@ -1,11 +1,12 @@
 package alex.klimchuk.javacore.consoleshop.connection;
 
-import alex.klimchuk.javacore.consoleshop.settings.DataBaseConnectionSettings;
 import alex.klimchuk.javacore.consoleshop.exception.ConnectionException;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Connection;
+
+import static alex.klimchuk.javacore.consoleshop.settings.DataBaseConnectionSettings.*;
 
 /**
  * Copyright Alex Klimchuk (c) 31.10.2019.
@@ -15,7 +16,7 @@ public class ConnectionManager {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection(DataBaseConnectionSettings.URL, DataBaseConnectionSettings.USER, DataBaseConnectionSettings.PASSWORD);
+            connection = DriverManager.getConnection(URL, USER, PASSWORD);
             connection.setAutoCommit(false);
             return connection;
         } catch (SQLException ex) {

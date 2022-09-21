@@ -6,8 +6,6 @@ import alex.klimchuk.javacore.consoleshop.exception.RepositoryException;
 import alex.klimchuk.javacore.consoleshop.connection.ConnectionManager;
 import alex.klimchuk.javacore.consoleshop.repository.impl.CategoryRepositoryImpl;
 import alex.klimchuk.javacore.consoleshop.repository.impl.ProductRepositoryImpl;
-import alex.klimchuk.javacore.consoleshop.repository.impl.*;
-import alex.klimchuk.javacore.consoleshop.model.*;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.runner.RunWith;
 import org.junit.Assert;
@@ -22,7 +20,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestProductRepositoryImpl {
+public class ProductRepositoryImplTest {
 
     private static final String CATEGORY_NAME = "Category for tests";
     private static final String PRODUCT_NAME = "Product for tests";

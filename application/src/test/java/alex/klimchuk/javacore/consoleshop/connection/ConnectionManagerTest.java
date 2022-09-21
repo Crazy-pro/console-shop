@@ -9,10 +9,10 @@ import java.sql.SQLException;
 import java.sql.Connection;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestConnectionManager {
+public class ConnectionManagerTest {
 
     @Test
-    public void checkConnection() throws SQLException {
+    public void testCheckConnection() throws SQLException {
         try (Connection connection = ConnectionManager.getConnection()) {
             Assert.assertNotNull(connection);
         }

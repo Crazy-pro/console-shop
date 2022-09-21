@@ -13,12 +13,12 @@ public class ApplicationGenericException extends RuntimeException {
         super(message);
     }
 
-    public ApplicationGenericException(String message, Throwable cause) {
-        super(message, cause);
-    }
-
     public ApplicationGenericException(Throwable cause) {
         super(cause);
+    }
+
+    public ApplicationGenericException(String message, Throwable cause) {
+        super(message, cause);
     }
 
 }

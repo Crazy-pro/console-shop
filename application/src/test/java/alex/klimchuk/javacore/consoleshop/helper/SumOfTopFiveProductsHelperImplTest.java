@@ -3,7 +3,6 @@ package alex.klimchuk.javacore.consoleshop.helper;
 import alex.klimchuk.javacore.consoleshop.model.Catalog;
 import alex.klimchuk.javacore.consoleshop.model.Category;
 import alex.klimchuk.javacore.consoleshop.helper.impl.SumOfTopFiveProductsHelperImpl;
-import alex.klimchuk.javacore.consoleshop.model.*;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.runner.RunWith;
 import org.junit.Assert;
@@ -17,7 +16,7 @@ import java.util.Map;
 import static alex.klimchuk.javacore.consoleshop.helper.CatalogInitializingHelper.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestSumOfTopFiveProductsHelperImpl {
+public class SumOfTopFiveProductsHelperImplTest {
 
     private final SumOfTopFiveProductsHelper SUM_OF_TOP_FIVE_PRODUCTS_HELPER = new SumOfTopFiveProductsHelperImpl();
     private Catalog catalog;

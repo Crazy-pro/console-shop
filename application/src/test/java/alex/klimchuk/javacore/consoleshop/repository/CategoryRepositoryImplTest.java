@@ -5,8 +5,6 @@ import alex.klimchuk.javacore.consoleshop.model.Category;
 import alex.klimchuk.javacore.consoleshop.exception.RepositoryException;
 import alex.klimchuk.javacore.consoleshop.connection.ConnectionManager;
 import alex.klimchuk.javacore.consoleshop.repository.impl.CategoryRepositoryImpl;
-import alex.klimchuk.javacore.consoleshop.repository.impl.*;
-import alex.klimchuk.javacore.consoleshop.model.*;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.runner.RunWith;
 import org.junit.Assert;
@@ -20,7 +18,7 @@ import java.sql.Statement;
 import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestCategoryRepositoryImpl {
+public class CategoryRepositoryImplTest {
 
     private static final String CATEGORY_NAME = "Category for tests";
     private static final String DELETE_ALL_CATEGORIES_SQL = "DELETE FROM categories;";
