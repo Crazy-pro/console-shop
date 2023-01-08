@@ -17,27 +17,6 @@ jobs:
       - run:
           name: Install dependencies
           command: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-      - run: whoami
-      - run: |
-              psql \
-              -d $TEST_DATABASE_URL \
-              -c "CREATE DATABASE console_shop     WITH    OWNER = postgres    ENCODING = 'UTF8'    LC_COLLATE = 'English_United States.1252'    LC_CTYPE = 'English_United States.1252'    TABLESPACE = pg_default    CONNECTION LIMIT = -1;"
-      - run: |
-          psql \
-          -d $TEST_DATABASE_URL \
-          -c "CREATE TABLE categories (id   SERIAL,  name VARCHAR(45) NOT NULL,  PRIMARY KEY (id)  );"
-      - run: |
-          psql \
-          -d $TEST_DATABASE_URL \
-          -c "CREATE TABLE products (  id            SERIAL,  name     	  VARCHAR(45) NOT NULL,  description   VARCHAR(45) NOT NULL,  price         DECIMAL(10) NOT NULL,  manufacturer  VARCHAR(45) NOT NULL,  category_id   INTEGER     NOT NULL,  PRIMARY KEY (id),  CONSTRAINT category_product_id  FOREIGN KEY (category_id)  REFERENCES categories (id)  ON DELETE CASCADE  ON UPDATE NO ACTION  );"
-      - run: |
-          psql \
-          -d $TEST_DATABASE_URL \
-          -c "  INSERT INTO categories (name)  VALUES  ('Laptop'),  ('Tablet'),  ('Smartphone');"
-      - run: |
-          psql \
-          -d $TEST_DATABASE_URL \
-          -c "    INSERT INTO products (name, description, price, manufacturer, category_id)  VALUES  ('Laptop', 'ASUS ROG 751', 1100, 'China', 1),  ('Tablet', 'ASUS ZenPad 751', 800, 'China', 2),  ('Smartphone', 'IPhone', 900, 'USA', 3);"
       - run:
           name: Run tests and collect coverage
           command: mvn -B test
