@@ -7,7 +7,11 @@ jobs:
   build:
     docker:
       - image: circleci/openjdk:9-jdk
-      - image: cimg/postgres:14.1
+      - image: circleci/postgres:15.1
+      - environment:
+        - POSTGRES_URL:      "jdbc:postgresql://localhost:5432/console_shop"
+        - POSTGRES_USER:     "postgres"
+        - POSTGRES_PASSWORD: "admin"
     steps:
       - checkout
       - run:
