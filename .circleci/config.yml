@@ -8,6 +8,8 @@ jobs:
     docker:
       - image: circleci/openjdk:9-jdk
       - image: cimg/postgres:15.1
+        volumes:
+          - ./scripts/sql/init:/docker-entrypoint-initdb.d:rw
         environment:
           POSTGRES_URL: postgresql://postgres@localhost/console_shop
           POSTGRES_DB: console_shop
@@ -19,7 +21,7 @@ jobs:
           name: Install dependencies
           command: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - run: sudo apt-get update
-      - run: sudo apt-get install postgresql-client
+      - run: sudo apt-get install postgresql
       - run: whoami
       - run: |
               psql \
