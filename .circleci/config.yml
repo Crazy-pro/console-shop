@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/openjdk:9-jdk
+      - image: circleci/openjdk:9-jdk
       - image: cimg/postgres:14.1
     steps:
       - checkout
