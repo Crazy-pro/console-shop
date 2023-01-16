@@ -11,6 +11,9 @@ jobs:
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD
+        volumes:
+          postgres_data: /var/lib/postgresql/data
+          init_script: /application/src/main/java/resources/script.sql
         environment:
           POSTGRES_DB: console_shop
           POSTGRES_USER: postgres
