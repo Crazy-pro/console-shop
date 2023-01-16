@@ -7,7 +7,10 @@ jobs:
   build:
     docker:
       - image: circleci/openjdk:9-jdk
-      - image: cimg/postgres:15.1
+      - image: cimg/postgres:14.6
+        environment:
+          POSTGRES_USER: testuser
+          POSTGRES_DB: circle-test_test
     steps:
       - checkout
       - run:
