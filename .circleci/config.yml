@@ -17,8 +17,6 @@ jobs:
           POSTGRES_PASSWORD: admin
     steps:
       - checkout
-      - run: sudo apt-get update
-      - run: sudo apt-get install postgresql-client
       - run:
          name: Setup DB
          working_directory: ./application/src/main/resources/
