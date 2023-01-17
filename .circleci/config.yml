@@ -15,14 +15,14 @@ jobs:
           POSTGRES_DB: console_shop
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: admin
-          POSTGRES_INIT_SCRIPT: /application/src/main/java/resources/script.sql
     steps:
       - checkout
       - run:
-          name: Install Postgres Client and Database Setup
-          command: |
-            sudo apt install postgresql-client
-            postgres -h 127.0.0.1 -u user -padmin console_shop < application/src/main/resources/script.sql
+          name: Install psql
+          command: sudo apt-get install -y postgresql-client
+      - run:
+          name: Data initialization
+          command: psql < application/src/main/resources/script.sql
       - run:
           name: Install dependencies
           command: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
