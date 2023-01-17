@@ -18,14 +18,6 @@ jobs:
     steps:
       - checkout
       - run:
-         name: Setup DB
-         working_directory: ./application/src/main/resources/
-         environment:
-            TERM: xterm
-         command: |
-           export PATH=/usr/pgsql-15.1/bin:$PATH
-           psql -q -d $CI_DATABASE_URL -f script.sql
-      - run:
           name: Install dependencies
           command: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - run:

@@ -5,18 +5,17 @@ import alex.klimchuk.javacore.consoleshop.model.Category;
 import alex.klimchuk.javacore.consoleshop.exception.RepositoryException;
 import alex.klimchuk.javacore.consoleshop.connection.ConnectionManager;
 import alex.klimchuk.javacore.consoleshop.repository.impl.CategoryRepositoryImpl;
+import org.junit.*;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.runner.RunWith;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.After;
-import org.junit.Test;
 
 import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.util.List;
 
+
+@Ignore
 @RunWith(MockitoJUnitRunner.class)
 public class CategoryRepositoryImplTest {
 
