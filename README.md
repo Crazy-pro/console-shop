@@ -19,7 +19,7 @@ to learn all the features of Java versions 8-9.
 - IDE: IntelliJ IDEA;
 - Database: PostgreSQL;
 - Tools: JUnit 4, Mockito, Maven, Git, Docker, JDBC, JPA, HTTPs, XML, YAML, JSON;
-- Others: GitHub, CircleCI, CodeCov, SonarCloud.
+- Others: GitHub, CircleCI, CodeCov, SonarLint, SonarCloud.
 
 [![CircleCI](https://circleci.com/gh/Crazy-pro/console-shop.svg?style=svg)](https://app.circleci.com/gh/Crazy-pro/console-shop)
 [![CodeCov](https://codecov.io/gh/Crazy-pro/console-shop/branch/master/graph/badge.svg)](https://codecov.io/gh/Crazy-pro/console-shop)
