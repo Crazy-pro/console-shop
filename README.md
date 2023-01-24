@@ -7,8 +7,10 @@ to learn all the features of Java versions 8-9.
 ### How to start:
 1. Install and run any IDE for working with Java.
 2. Install the latest version of docker if you still haven't done it.
-3. Run PostgreSQL Docker Container or just use the PC client PgAdmin.
-4. Execute script.sql.
+3. Run PostgreSQL in a Docker Container or just use the PC client PgAdmin:
+   - docker pull postgres
+   - docker run --name postgresql -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=admin -d postgres
+4. Connect to the DataBase and execute application/src/main/resources/script.sql.
 5. Run the application and check its functionality in IDE's console.
   
   
