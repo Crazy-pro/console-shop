@@ -7,8 +7,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <artifactId>console-shop</artifactId>
         <groupId>alex.klimchuk.javacore</groupId>
+        <artifactId>console-shop</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
