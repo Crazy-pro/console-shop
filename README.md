@@ -1,6 +1,6 @@
 ### Console Shop
 Multi-module console application with client-server architecture written in Java
-to learn all the features of Java versions 8-9.
+to learn all the features of Java versions 8-9. 
   
   
   
